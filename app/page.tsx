@@ -63,19 +63,22 @@ export default function Home() {
             setActiveJob(updated);
           }} />
         ) : (
-          <div className="flex flex-col items-center justify-center h-full text-center gap-4">
-            <div className="text-5xl">🎯</div>
-            <h2 className="text-xl font-medium">Welcome to RecruitFlow</h2>
-            <p className="text-white/40 text-sm max-w-sm">
-              Create a new job role to get started. The AI will write the job description,
-              screen candidates, and draft outreach — automatically.
-            </p>
+          <div className="flex flex-col items-center justify-center h-full text-center gap-5">
+            <div className="w-12 h-px bg-white/20" />
+            <div>
+              <h2 className="text-2xl font-light tracking-tight">RecruitFlow</h2>
+              <p className="text-white/30 text-sm mt-2 max-w-xs leading-relaxed">
+                AI-powered hiring pipeline. Write job descriptions, screen candidates,
+                and draft outreach — in seconds.
+              </p>
+            </div>
             <button
               onClick={() => setView("new-job")}
-              className="mt-2 px-5 py-2.5 rounded-lg bg-violet-600 hover:bg-violet-500 transition-colors text-sm font-medium"
+              className="mt-1 px-5 py-2.5 rounded-lg bg-violet-600 hover:bg-violet-500 transition-colors text-sm font-medium tracking-wide"
             >
               Create your first job posting
             </button>
+            <div className="w-12 h-px bg-white/20" />
           </div>
         )}
       </main>
